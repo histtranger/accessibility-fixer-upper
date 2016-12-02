@@ -12,15 +12,10 @@ html {
 
 a {
   color: #568c36;
-  text-decoration: none;
 }
 
 a:hover {
   color: #113c00;
-}
-
-a:focus {
-  outline: 3px solid #000;
 }
 
 .max-length {
@@ -43,13 +38,26 @@ a:focus {
 .nav a {
   display: inline-block;
   padding: .5rem .75rem;
-
+  text-decoration: none;
   color: #fff;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -3em;
+}
+
+.skip-links a:focus {
+  top: 0;
 }
 
 .nav a:hover {
   background-color: #fff;
   color: #113c00;
+}
+
+.nav a:focus {
+  outline: 3px solid #000;
 }
 
 .about {
